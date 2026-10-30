@@ -1,0 +1,16 @@
+# Core app
+pandas>=2.0
+numpy>=2.0          # the shipped .joblib models were exported with numpy 2.x
+scikit-learn>=1.4   # ditto - see "Environment" in README.md
+joblib>=1.2
+plotly>=5.15
+streamlit>=1.36
+
+# Used directly by the app
+pillow>=9.0         # logo/favicon rendering
+requests>=2.28      # online recipe fallback (TheMealDB / Gemini / OpenAI)
+
+# Report Reader (OCR) - optional, only needed for scanned/photographed lab reports.
+# The rest of the app runs fine without these:
+# pymupdf>=1.23
+# rapidocr-onnxruntime>=1.3
